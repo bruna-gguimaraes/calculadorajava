@@ -10,26 +10,26 @@ public class CalculadoraJava {
       System.out.print("Digite a operação (+, -, *, /): ");
       char operador = scanner.next().charAt(0);
       scanner.close();
-      double resulto;
+      double resultado;
 
       switch(operador) {
          case '+':
-            resulto = num1 + num2;
+           resultado = num1 + num2;
             break;
          case '-':
-            resulto = num1 - num2;
+            resultado = num1 - num2;
             break;
          case '*':
-            resulto = num1 * num2;
+            resultado = num1 * num2;
             break;
          case '/':
-            resulto = num1 / num2;
+            resultado = num1 / num2;
             break;
          default:
             System.out.println("Operação inválida.");
             return;
       }
 
-      System.out.println(num1+" "+operador+" "+num2+": "+resulto);
+      System.out.println(num1+" "+operador+" "+num2+": "+resultado);
    }
 }
